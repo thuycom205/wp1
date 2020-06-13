@@ -1,0 +1,70 @@
+<?xml version='1.0' standalone='yes'?>
+<questions>
+    <question>
+        <q>
+            does NAT instance support IPv6
+        </q>
+        <a>
+            no it does not support IPV6
+        </a>
+    </question>
+
+    <question>
+        <q>
+            does NAT instance allow public internet initiated connection into private instance
+        </q>
+        <a>
+            no, it does not
+
+        </a>
+    </question>
+    <question>
+        <q>
+
+            describe how to set up NAT instance ?
+        </q>
+        <a>
+            create EC2 instance. this instance must live on public subnet
+
+            private instance must have route to the NAT instance
+
+        </a>
+    </question>
+    <question>
+        <q>
+            how to set up multi-AZ redundancy for NAT gateway
+        </q>
+        <a>
+
+            create NAT gateway in each AZ with routes for private subnets to use local gateway.
+        </a>
+    </question>
+    <question>
+        <q>
+            can you use NAT gateway to access VPC peering, VPN or Direct Connect?
+        </q>
+        <a>
+            No ,you can not. Be sure to include specific routes to those in your route table. ( remember : most specific
+            route is selected first)
+
+        </a>
+    </question>
+    <question>
+        <q>
+            Compare NAT instance and NAT gateway in these perspective :
+            1. bandwidth 2. maintenance, performance 4. public IP 5. Security group 6. Bastion host
+        </q>
+        <a>
+            Nat instance has limit bandwidth
+            you have to maintain NAT instance on your own
+
+            you can detach public IP address from NAT instance but you can not detach public IP address from NAT gateway
+
+            you can attach security group to NAT instance but can not attach to NAT gateway
+
+            NAT instance can be bastion host , in contrast you can not do it with NAT gateway
+        </a>
+    </question>
+
+
+</questions>

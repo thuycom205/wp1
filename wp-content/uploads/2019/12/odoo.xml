@@ -1,0 +1,199 @@
+<?xml version='1.0' standalone='yes'?>
+<questions>
+    <question>
+        <q>
+            If the costing method is "Average Price", will the unit cost of a product change when I delivery some
+            product?
+        </q>
+
+        <a>
+            Yes
+            No
+        </a>
+    </question>
+
+    <question>
+        <q>
+            I manage a product whose cost is based on an Average Cost. Suppose I have 8 pieces of product in stock with
+            a cost of 100 EUR/piece, If I purchase and received two new pieces of 10EUR/piece. what wil lbe my cost?
+        </q>
+
+        <a>
+            100
+            90
+            82
+        </a>
+    </question>
+    <question>
+        <q>
+            If a product has several vendors, which one is proposed on request for quotations?
+        </q>
+        <a>
+            - The first supplier in the list
+            - The one with smallest delivery lead time
+            - The one with the smallest price
+        </a>
+    </question>
+
+    <question>
+        <q>
+            I manage a product whose cost is based on "Standar price". Suppose I have 8 pieces of product in stock with
+            a cost of 100EUR/piece. If I purchase and received two new pieces for apice of 10 EUR/piece. If I purchase
+            an receive two new pieces for a price of 10 EUR/ piece , what will be my cost?
+        </q>
+        <a>
+            100
+            90
+            82
+        </a>
+    </question>
+
+    <question>
+        <q>
+            What is the impact of setting the "Control Policy" On the product as "On ordered quantities"?
+        </q>
+        <a>
+            - when creating a vendor bill, the price comes from the purchase order, and the quantity form the reception
+            - When a purchase order is confirmed, a vendor bill is automatically created
+            - When creating a vendor bill, quantities and prices are automatically filled with the ordered ones
+
+        </a>
+    </question>
+    <question>
+        <q>
+            What is the impact of setting the "Control Policy" on the product as "On ordered quantities"?
+        </q>
+        <a>
+            - When creatign a vendor bill, the price comes from the purchase order, and the quantity from the reception
+            - When a purchase order is confirmed, a vendor bill is automatically created
+            - When creating a vendor bill, quantities and prices are automatically filled with the ordered ones
+        </a>
+    </question>
+
+    <question>
+        <q>
+            Where is the costing method defined?
+        </q>
+        <a>
+            - On the product
+            - On the product category
+            - On the company ( all the products have same costing method)
+        </a>
+    </question>
+
+    <question>
+        <q>
+            When setting Quantities "Usign quantities of agreements" on an agreement type , when a request for quotation
+            is generated (49:37)
+        </q>
+        <a>
+            - The quantity is set to 0 by default
+            - The quantity in RFQ can not be changed
+            - The quantity in RFQ can still be changed
+        </a>
+    </question>
+
+    <question>
+        <q>
+            Can I create a vendor bill grouping several purchase orders
+        </q>
+        <a>
+            Yes
+            No
+        </a>
+    </question>
+    <question>
+        <q>
+            When a Purchase Order is validated , is it still possible to add purchase order lines?
+        </q>
+
+        <a>
+            - Yes, a long as the Purchase order is not "Locked"
+            - No, never
+        </a>
+    </question>
+    <question>
+        <q>
+            Which of the following statements is true regarding this computation?
+            (51:01)
+        </q>
+        <a>
+            - For customers associated with this pricelist, I allow a reduction of exactly 10% on all products
+            - For customer associated with this pricelist, all price will end in ".90"
+            - For customers associated with this pricelist, all prices will end in ".00"
+
+        </a>
+    </question>
+
+    <question>
+        <q>
+            What does it means if the forecasted quantit of a stockable product is less than the quantity on hand ?
+            routes : tick on buy check box
+        </q>
+        <a>
+            - If there is a reordering rule set, the product will be manufactured once the rule is triggered
+            - The product will be ordered from a vendor everytime a sales or manufacturing order is validated
+            - The product will be manufactured everytime a sales or manufacturing order is validated
+
+        </a>
+    </question>
+
+    <question>
+        <q>
+            What is the "Customer lead time" field used for on the product form?
+        </q>
+        <a>
+            - If computes the order date based on the quotation date
+            - If computes the delivery order date when the quotation is confirmed
+            - It is displayed in the TermConditions of the quotation
+        </a>
+    </question>
+    <question>
+        <q>
+            What is the goal of the "Stock input/Output Account fields on a product category form? (53:13)
+        </q>
+        <a>
+            - There accoutns are used to track where each product is
+            - These accounts are used to track import (input) and export (output ) values of products
+            - These accounts are used to track changes of inventory valuation in accounting
+
+        </a>
+    </question>
+    <question>
+        <q>
+            Can any product be used in a sales order?
+        </q>
+        <a>
+            - Yes, you can find all your products
+            - No, you can only find products you currently have in stock
+            - No, you can only find products for which you have mark as "Can be sold"
+        </a>
+    </question>
+
+    <question>
+        <q>
+            How could I prevent a specific product form being used in quotes?
+        </q>
+        <a>
+            - By archieving the product
+            - By setting a blocking warning
+            -Both solutions are correct
+        </a>
+    </question>
+
+    <question>
+        <q>
+            what i the relation between the commitment date of a sales order and the delivery date of its delivery
+            order?
+        </q>
+        <a>
+            - Delivery date = commitment date
+            - Delivery date = Commitment daet e+ product lead time
+            - Delivery date = Commitment date - Product liead time
+        </a>
+    </question>
+
+</questions>
+
+
+

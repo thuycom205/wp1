@@ -1,0 +1,78 @@
+<?xml version='1.0' standalone='yes'?>
+<questions>
+
+    <question>
+        <q>
+            virtual machine is migrated from on-premise to AWS . service on premise.
+
+        </q>
+        <a>
+            1.Direct link
+            2. no IP confliction
+            3. Import Virtual machine
+
+            does VPC use intenet gateway to connect , use Customer gateway and virtual private gateway
+
+            need EIP for VPC : no , it can use private internet gateway
+        </a>
+        <tag>
+            VPC, EIP, Internet gateway, Virtual machine import, on-premise
+        </tag>
+    </question>
+
+    <question>
+        <q>
+            without creating users , still can go to console
+
+        </q>
+        <a>
+            federated access to AWS Management Console via AWS single sign-on endpoint
+
+        </a>
+        <tag>
+            fedated access , OAuth, Web identity provider, LDAP, SAML identity provider
+
+        </tag>
+    </question>
+
+    <question>
+        <q>
+            web server need certificates authentication
+            which option is correct : ELB with TCP, ELB with HTTPs listener, Route 53 with record set to IP address
+        </q>
+        <a>
+            Route 53, ELB with TCP
+        </a>
+        <tag>
+            ELB, Route 53, http-ssl
+        </tag>
+    </question>
+
+    <question>
+        <q>
+            application need to know IP of client , multi AZ. What change request should I use?
+        </q>
+
+        <a>
+            ELB, TCP listener, proxy protocal
+
+            cross-zone protocal?
+        </a>
+        <tag>
+            ELB, proxy protocal
+        </tag>
+    </question>
+
+    <question>
+        <q>
+            blog using S3 and Cloud Front with 6 month , 4month frequency access
+        </q>
+        <a>
+            create a cloudFront distribution with S3 access restricted to CloudFront identityand partition blog
+            entry's location in S3 according to the month it was uploaded to be used with CloudFront behaviour
+        </a>
+        <tag>
+            CloudFront identification , partition
+        </tag>
+    </question>
+</questions>

@@ -1,0 +1,118 @@
+<?xml version='1.0' standalone='yes'?>
+<questions>
+
+    <question>
+        <q>
+            whitelist system to restrict outbounds https connections. Ec2 invice running proxy software , accept traffic
+            from all subnets and EC2 instance in the vpc,
+            pass : white
+
+            some get updates, some nots, why?
+        </q>
+        <a>
+            proxy on undersize instance type so network throughput is not sufficient
+
+        </a>
+
+        <tag>
+            VPC, proxy EC2 instance,
+        </tag>
+    </question>
+
+    <question>
+        <q>
+            use ELB with instance type, some un-used. Route 53
+        </q>
+        <a>
+            Route53 Weighted Routing , separate ELB for each instance type
+        </a>
+        <tag>
+            Route53, ELB
+        </tag>
+    </question>
+    <question>
+        <q>
+            web app, app, mysql , read only? how to improve performace?
+        </q>
+        <a>
+            stateless instances, Elastic Memcached, monitored with CloudWatch, read replica for RDS
+        </a>
+        <tag>
+            stateless instance
+        </tag>
+    </question>
+
+    <question>
+        <q>
+            what help increasing load time?
+        </q>
+        <a>
+            cloudfront, read replica, Elastic cache
+
+            lower Autoscale trigger up to 30%
+        </a>
+        <tag>
+            load time reduce
+        </tag>
+    </question>
+    <question>
+        <q>
+            mobile app to get location and push notification?
+            what architect?
+        </q>
+        <a>
+            SQS to store location, DynamoDB, AWS Push notification
+        </a>
+        <tag>
+            SQS, SNS
+        </tag>
+    </question>
+    <question>
+        <q>
+            application allow browse JPEG, commercial search, scalable
+        </q>
+        <a>
+            S3, CloudSearch, Elastic BeanStalk
+        </a>
+        <tag>
+            Cloudsearch
+        </tag>
+    </question>
+    <question>
+        <q>
+            design system for million votes and update the total vote
+        </q>
+        <a>
+            SQS, Dynamo Db, ELB , auto-scale
+        </a>
+        <tag>
+            SQS
+        </tag>
+    </question>
+
+    <question>
+        <q>
+            store mobile user preference, what architect is prefered?
+        </q>
+        <a>
+            DynamoDB Fine Grained Acess Control
+        </a>
+        <tag>
+            Dynamo
+        </tag>
+    </question>
+    <question>
+        <q>
+            Master account cand stop, terminate Dev and Test resource
+        </q>
+        <a>
+            Master account with "assumed role"
+            Dev and test using cross-account
+        </a>
+        <tag>
+            IAM
+        </tag>
+    </question>
+
+
+</questions>
