@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!--
+<script language="javascript" type="text/javascript">
+    function playSound(soundfile) {
+        document.getElementById("dummy").innerHTML=
+                "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+    }
+</script> -->
+    <div class="header" id="header">
+        <div class="nav-menu">
+            <ul>
+                <li>
+                    <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i><span>Video</span></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-book" aria-hidden="true"></i><span>Learn</span></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-file-text-o" aria-hidden="true"></i><span>Sentence</span></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-font" aria-hidden="true"></i><span>Spell</span></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-volume-up" aria-hidden="true"></i><span>Listen</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <span id="dummy"></span>
+    <div id="main" class="page-main">
+        <div class="section-vol">
+            <div class="list-vol owl-vol vol-items">
+                <div class="vol">
+                    <div class="vol-img">
+                        <img src="images/field.jpg">
+                    </div>
+                    <div class="vol-text">
+                        <span class="world">Forest</span>
+                        <span class="vietnamese">Khu rừng</span>
+                        <div>
+                            <a href="#" onclick="playSound('http://localhost/magen2/book/magento2/program/forest.mp3');" class="vol-volume"><i class="fa fa-volume-down" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vol">
+                    <div class="vol-img">
+                        <img src="images/field.jpg">
+                    </div>
+                    <div class="vol-text">
+                        <span class="world">Forest</span>
+                        <span class="vietnamese">Khu rừng</span>
+                        <div>
+                            <a href="#" onclick="playSound('http://localhost/magen2/book/magento2/program/forest.mp3');" class="vol-volume"><i class="fa fa-volume-down" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vol">
+                    <div class="vol-img">
+                        <img src="images/field.jpg">
+                    </div>
+                    <div class="vol-text">
+                        <span class="world">Forest</span>
+                        <span class="vietnamese">Khu rừng</span>
+                        <div>
+                            <a href="#" onclick="playSound('http://localhost/magen2/book/magento2/program/forest.mp3');" class="vol-volume"><i class="fa fa-volume-down" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-buttons">
+                <div class="owl-prev"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+                <div class="perpage">
+                    <span>12 of 24</span>
+                    <div class="progressBar">
+                        <div class="fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="owl-next"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var owl = $('.owl-vol');
+            owl.owlCarousel({
+                items:1,
+                navRewind: true,
+                
+            });
+            
+           
+            $('.owl-next').click(function() {
+                owl.trigger('next.owl.carousel');
+            })
+            
+            $('.owl-prev').click(function() {
+                
+                owl.trigger('prev.owl.carousel');
+            })
+           
+        });
+        
+    </script>
+
+   
+</body>
+</html>

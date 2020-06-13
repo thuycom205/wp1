@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .vol {
+            margin:20px;
+            border: 1px solid #ba4000;
+        }
+        .vietnamese {
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+    function playSound(soundfile) {
+        document.getElementById("dummy").innerHTML=
+                "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+    }
+</script>
+<span id="dummy"></span>
+<div>
+    <div class="vol">
+        <span class="world">Forest</span>
+        <span class="vietnamese">Khu rừng</span>
+
+        <div>
+
+            <a href="#" onclick="playSound('http://localhost/magen2/book/magento2/program/forest.mp3');"> <img src="http://localhost/magen2/book/magento2/program/forest.jpg"> </a>
+        </div>
+    </div>
+    <div class="vol">
+        <span class="world">ocean</span>
+        <span class="vietnamese">Biển</span>
+
+        <a href="#" onclick="playSound('http://localhost/magen2/book/magento2/program/ocean.mp3');"> <img src="http://localhost/magen2/book/magento2/program/ocean.jpg"> </a>
+    </div>
+    <div class="vol">
+        <span class="world">river</span>
+        <span class="vietnamese">Dòng sông</span>
+        <a href="#river" onclick="playSound('http://localhost/magen2/book/magento2/program/river.mp3');"> <img id="river" src="http://localhost/magen2/book/magento2/program/river.jpg"> </a>
+    </div>
+    <div class="vol">
+        <span class="world">field</span>
+        <span class="vietnamese">Cánh đồng</span>
+
+        <a href="#field" onclick="playSound('http://localhost/magen2/book/magento2/program/field.mp3');"> <img id="field" src="http://localhost/magen2/book/magento2/program/field.jpg"> </a>
+    </div>
+    <div class="vol">
+        <span class="world">seashore</span>
+        <span class="vietnamese">Bờ Biển</span>
+        <a href="#seashore" onclick="playSound('http://localhost/magen2/book/magento2/program/seashore.mp3');"> <img id="seashore"src="http://localhost/magen2/book/magento2/program/seashore.jpg"> </a>
+    </div>
+    <div class="vol">
+        <span class="world">yard</span>
+        <span class="vietnamese">Khu vườn</span>
+
+        <a href="#yard" onclick="playSound('http://localhost/magen2/book/magento2/program/yard.mp3');"> <img  id="yard" src="http://localhost/magen2/book/magento2/program/yard.jpg"> </a>
+    </div>
+
+</div>
+</body>
+</html>

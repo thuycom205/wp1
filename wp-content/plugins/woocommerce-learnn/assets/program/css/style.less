@@ -1,0 +1,175 @@
+
+.nav-menu {
+	background-color: #132D45;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+			margin: 0;
+			padding: 12px;
+			display: inline-block;
+			a {
+				color: #fff;
+				text-decoration: none;
+				&:hover,
+				&:focus {
+					color: #ED6D6D;
+					text-decoration: none;
+				}
+			}
+			.fa {
+				padding-right: 5px;
+			}
+		}
+	}
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	background-color: #E8E4DE;
+}
+
+.page-main {
+	height: 100%;
+	
+	position: relative;
+	.section-vol {
+		padding: 0 30px;
+		margin: 30px 0;
+		
+	}
+}
+.clearfix(){
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+.list-vol {
+	max-width: 800px;
+	margin: 0 auto 30px;
+}
+.vol {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 0 #cac3b8, 5px 5px 16px #d4cec5;
+	position: relative;
+	display: block;
+	.list-vol & {
+		margin-bottom: 20px;
+	}
+	.owl-vol & {
+		margin-bottom: 0;
+	}
+	.grid-vol & {
+		width: 49%;
+		box-sizing: border-box;
+		
+		margin-bottom: 20px;
+		float: left;
+		&:nth-child(2n+1) {
+			margin-right: 2%;
+			clear: both;
+		}
+	}
+	.clearfix();
+	.vol-img {
+		display: block;
+		width: 48%;
+		box-sizing: border-box;
+		float: left;
+		margin-right: 2%;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			width: 100%;
+		}
+	}
+	.vol-text {
+		font-size: 20px;
+		padding-top: 20px;
+		.world {
+			display: block;
+		}
+		.vietnamese {
+			display: block;
+		}
+	}
+	.vol-volume {
+		position: absolute;
+		top: 0px;
+		right: 20px;
+		color: #d0cac0;
+		font-size: 24px;
+		&:hover {
+			color: #B4AB9C;
+		}
+	}
+}
+
+
+.section-vol {
+	.owl-buttons {
+		text-align: center;
+		bottom: 0;
+		.owl-next,
+		.owl-prev {
+			width: 40px;
+			line-height: 40px;
+			border-radius: 3px;
+			background-color: #F7F4F0;
+			color: #111;
+			display: inline-block;
+			text-align: center;
+			border: 1px solid 1px solid #d3d1ce;
+			
+			vertical-align: middle;
+			cursor: pointer;
+		}
+	}
+	.perpage {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 10px;
+		> span {
+			font-size: 13px;
+		}
+		.progressBar {
+			width: 150px;
+			background-color: #C8C5C0;
+			height: 10px;
+			position: relative;
+			.fill {
+				position: absolute;
+				top: 0px;
+				bottom: 0px;
+				left: 0;
+				background-color: #1F6FD9;
+			}
+		}
+	}
+}
+@media (max-width: 479px) {
+	.page-main {
+		.section-vol {
+			padding: 0 5px;
+		}
+	}
+	.grid-vol .vol {
+		width: 100%;
+		margin-right: 0;
+	}
+}

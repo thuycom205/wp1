@@ -1,0 +1,159 @@
+.nav-menu {
+  background-color: #132D45;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+}
+.nav-menu ul li {
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+  display: inline-block;
+}
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-menu ul li a:hover,
+.nav-menu ul li a:focus {
+  color: #ED6D6D;
+  text-decoration: none;
+}
+.nav-menu ul li .fa {
+  padding-right: 5px;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: #E8E4DE;
+}
+.page-main {
+  height: 100%;
+  position: relative;
+}
+.page-main .section-vol {
+  padding: 0 30px;
+  margin: 30px 0;
+}
+.list-vol {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+.vol {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0 #cac3b8, 5px 5px 16px #d4cec5;
+  position: relative;
+  display: block;
+}
+.list-vol .vol {
+  margin-bottom: 20px;
+}
+.owl-vol .vol {
+  margin-bottom: 0;
+}
+.grid-vol .vol {
+  width: 49%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  float: left;
+}
+.grid-vol .vol:nth-child(2n+1) {
+  margin-right: 2%;
+  clear: both;
+}
+.vol:before,
+.vol:after {
+  content: "";
+  display: table;
+}
+.vol:after {
+  clear: both;
+}
+.vol .vol-img {
+  display: block;
+  width: 48%;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 2%;
+}
+.vol .vol-img img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+.vol .vol-text {
+  font-size: 20px;
+  padding-top: 20px;
+}
+.vol .vol-text .world {
+  display: block;
+}
+.vol .vol-text .vietnamese {
+  display: block;
+}
+.vol .vol-volume {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  color: #d0cac0;
+  font-size: 24px;
+}
+.vol .vol-volume:hover {
+  color: #B4AB9C;
+}
+.section-vol .owl-buttons {
+  text-align: center;
+  bottom: 0;
+}
+.section-vol .owl-buttons .owl-next,
+.section-vol .owl-buttons .owl-prev {
+  width: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+  background-color: #F7F4F0;
+  color: #111;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid 1px solid #d3d1ce;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.section-vol .perpage {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.section-vol .perpage > span {
+  font-size: 13px;
+}
+.section-vol .perpage .progressBar {
+  width: 150px;
+  background-color: #C8C5C0;
+  height: 10px;
+  position: relative;
+}
+.section-vol .perpage .progressBar .fill {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0;
+  background-color: #1F6FD9;
+}
+@media (max-width: 479px) {
+  .page-main .section-vol {
+    padding: 0 5px;
+  }
+  .grid-vol .vol {
+    width: 100%;
+    margin-right: 0;
+  }
+}
